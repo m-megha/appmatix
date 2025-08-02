@@ -1,0 +1,44 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      144.77deg,
+      rgba(9, 112, 255, 0.2) 20.69%,
+      rgba(0, 0, 0, 0.2) 101.02%
+    ),
+    url("/assets/images/GreenTriangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 70%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  position: relative;
+}
+
+#subtitle {
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.fadedLogo {
+  position: absolute;
+  bottom: 110px;
+  right: 15%;
+}
+
+.fadedLogo2 {
+  position: absolute;
+  bottom: 110px;
+  right: 15%;
+  transform: rotate(10deg) scale(0.9);
+  opacity: 0.5;
+}
+
+.ellipsis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
