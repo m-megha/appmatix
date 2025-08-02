@@ -1,0 +1,113 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      144.77deg,
+      rgba(9, 112, 255, 0.2) 20.69%,
+      rgba(0, 0, 0, 0.2) 101.02%
+    ),
+    url("/assets/images/GreenTriangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 70%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  position: relative;
+}
+
+#subtitle {
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.fadedLogo {
+  position: absolute;
+  bottom: 110px;
+  right: 15%;
+}
+
+.fadedLogo2 {
+  position: absolute;
+  bottom: 110px;
+  right: 15%;
+  transform: rotate(10deg) scale(0.9);
+  opacity: 0.5;
+}
+
+.ellipsis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.headerExtended {
+  background-image: linear-gradient(
+      142.37deg,
+      rgba(9, 112, 255, 0.2) 21.97%,
+      rgba(0, 0, 0, 0.2) 100.07%
+    ),
+    url("/assets/images/GreenTriangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 96%;
+  transform: scaleX(-1) rotate(180deg);
+  height: 200px;
+  width: 100%;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 99;
+}
+
+.scrollIndicator > img:first-child {
+  animation-name: rotateEffect;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.scrollIndicator .arrows {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  cursor: pointer;
+  animation-name: arrowEffect;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.arrows img:last-child {
+  transform: translateY(-70%);
+}
+
+@keyframes arrowEffect {
+  0% {
+    transform: translate(-50%, -20%);
+  }
+  50% {
+    transform: translate(-50%, 5%);
+  }
+  100% {
+    transform: translate(-50%, -20%);
+  }
+}
+
+@keyframes rotateEffect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
