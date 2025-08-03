@@ -1,0 +1,51 @@
+.story {
+  background-image: url("/assets/gif/cyber.gif");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 60%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.storyContents {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  transform: translateY(-50px);
+  position: relative;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.title h1 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.logoImage {
+  position: absolute;
+  top: -65%;
+  left: -18%;
+  opacity: 50%;
+  transform: scale(0.9);
+}
