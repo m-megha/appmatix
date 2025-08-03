@@ -11,12 +11,15 @@
 .content {
   width: 75%;
   text-align: center;
+  z-index: 99;
 }
 
-h1 {
+#text {
   color: white;
   font-size: 40px;
   font-weight: 400;
+  text-align: center;
+  letter-spacing: 1.1px;
 }
 
 #lineGroup1 {
@@ -43,4 +46,102 @@ h1 {
   bottom: 13%;
   right: 8%;
   transform: rotate(180deg);
+}
+
+#blueCircle {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  content: " ";
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #0f1c5c;
+  filter: blur(70px);
+  animation-name: blueCircleRotation;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+}
+
+#greenCircle {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  content: " ";
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #103133;
+  filter: blur(70px);
+  animation-name: greenCircleRotation;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+}
+
+@keyframes blueCircleRotation {
+  0% {
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 0);
+  }
+  20% {
+    left: 0;
+    bottom: 30%;
+    transform: translate(0, 0);
+  }
+  30% {
+    bottom: 100%;
+    left: 25%;
+    transform: translate(0, 100%);
+  }
+  55% {
+    bottom: 100%;
+    left: 70%;
+    transform: translate(0, 100%);
+  }
+  70% {
+    left: 100%;
+    bottom: 0;
+    transform: translate(-100%, 0);
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes greenCircleRotation {
+  0% {
+    left: 40%;
+    bottom: 0;
+    transform: translate(0, 0);
+  }
+  20% {
+    left: 0;
+    bottom: 10%;
+    transform: translate(0, 0);
+  }
+  30% {
+    bottom: 100%;
+    left: 10%;
+    transform: translate(0, 100%);
+  }
+  70% {
+    bottom: 100%;
+    left: 100%;
+    transform: translate(-100%, 100%);
+  }
+  80% {
+    left: 90%;
+    bottom: 0;
+    transform: translate(-100%, 0);
+  }
+  100% {
+    bottom: 0;
+    left: 40%;
+    transform: translate(0, 0);
+  }
 }
