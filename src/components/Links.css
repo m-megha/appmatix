@@ -1,0 +1,21 @@
+.links h2 {
+  color: #0a142f;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.links ul {
+  list-style: none;
+  opacity: 80%;
+}
+
+.links ul li {
+  padding-top: 20px;
+}
+
+.links ul a {
+  color: #0a142f;
+  opacity: 80%;
+  text-decoration: none;
+  font-size: 14px;
+}

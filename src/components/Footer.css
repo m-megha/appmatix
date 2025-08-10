@@ -1,0 +1,59 @@
+footer {
+  padding: 86px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.infoItem {
+  flex: 1;
+}
+
+.infoContact {
+  flex: 1.5;
+}
+
+.info p {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.infoLinks {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 150px;
+  flex: 2.5;
+}
+
+.logoBox {
+  transform: translateY(-30px);
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.copyright ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+hr {
+  border-color: #979797;
+  opacity: 20%;
+  margin-top: 40px;
+}
+
+.rights {
+  color: #0a142f;
+  opacity: 65%;
+  font-size: 14px;
+  font-weight: 600;
+}
