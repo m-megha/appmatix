@@ -36,24 +36,28 @@ const Footer = () => {
   return (
     <footer>
       <div className="info">
-        <div>
-          <img src={Logo} />
+        <div className="logoBox infoItem">
+          <img src={Logo} height={80} />
           <p>Scale up your business with innovative digital experiences</p>
         </div>
-        <Links title={quickLinks.title} list={quickLinks.list} />
-        <Links title={services.title} list={services.list} />
-        <Contact />
+        <div className="infoItem infoLinks">
+          <Links title={quickLinks.title} list={quickLinks.list} />
+          <Links title={services.title} list={services.list} />
+        </div>
+        <div className="infoItem infoContact">
+          <Contact />
+        </div>
       </div>
       <hr />
       <div className="copyright">
-        <div>
+        <div className="rights">
           &copy;{new Date().getFullYear()} APPMATIX | All Rights Reserved
         </div>
         <ul>
           {socialMedia.map((item) => (
             <li>
               <a href={item.link} target="_blank">
-                <img src={item.icon} height={40} width={40} />
+                <img src={item.icon} height={20} />
               </a>
             </li>
           ))}

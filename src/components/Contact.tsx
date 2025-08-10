@@ -5,9 +5,15 @@ const Contact = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <div>
-      <h2>Lets keep in touch</h2>
-      <p>
+    <form
+      className="contact"
+      onSubmit={(e) => {
+        e.preventDefault();
+        setEmail("");
+      }}
+    >
+      <h2>Let's keep in Touch</h2>
+      <p id="contactDescription">
         Enter you email to keep in the know with the latest updates from
         Transparent.
       </p>
@@ -19,7 +25,7 @@ const Contact = () => {
         onChange={(e) => setEmail(e.target.value)}
       />
       <button type="submit">Submit</button>
-    </div>
+    </form>
   );
 };
 

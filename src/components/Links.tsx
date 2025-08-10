@@ -8,7 +8,7 @@ const Links = ({
   list: { label: string; path: string }[];
 }) => {
   return (
-    <div>
+    <div className="links">
       <h2>{title}</h2>
       <ul>
         {list.map((item) => (

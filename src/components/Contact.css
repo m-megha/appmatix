@@ -1,0 +1,34 @@
+.contact h2 {
+  color: #3572ae;
+  font-weight: 500;
+}
+
+#contactDescription {
+  font-size: 16px;
+}
+
+.contact input {
+  background-color: #343841;
+  padding: 16px 12px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-top: 18px;
+  color: white;
+}
+
+.contact button {
+  display: block;
+  background: linear-gradient(to right, #218086, #27528e);
+  padding: 12px 0px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  margin-top: 25px;
+  height: 52px;
+}
