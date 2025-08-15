@@ -32,7 +32,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="services">
+    <div className="services" id="services">
       <img src={Vector} className="vector" />
       <div className="serviceContents">
         <h2>WHAT WE DO FOR YOU ?</h2>

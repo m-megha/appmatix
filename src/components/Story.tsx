@@ -4,7 +4,7 @@ import A from "/assets/images/A.png";
 
 const Story = () => {
   return (
-    <div className="story">
+    <div className="story" id="story">
       <div className="storyContents">
         <img className="logoImage" src={A} />
         <div className="title">
