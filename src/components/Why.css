@@ -1,0 +1,68 @@
+.why {
+  height: 100vh;
+  background: linear-gradient(129.79deg, #075acd -111.46%, #000000 72.72%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  height: 80vh;
+  width: 80vw;
+  position: relative;
+}
+
+.grid::after {
+  position: absolute;
+  background-image: url("/assets/svg/Grid.svg");
+  content: " ";
+  height: 80vh;
+  top: 0;
+  left: 0;
+  opacity: 30%;
+  width: 100%;
+}
+
+.grid::before {
+  position: absolute;
+  background-color: #382c93;
+  content: " ";
+  height: 400px;
+  top: 50%;
+  left: 0;
+  opacity: 30%;
+  width: 400px;
+  border-radius: 50%;
+  filter: blur(70px);
+  transform: translateY(-50%);
+}
+
+.flip-card {
+  background-color: #b2b2b2;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  content: " ";
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-55%);
+  transform-origin: right bottom;
+}
+
+#card-1 {
+  transform: translateY(-55%) rotate(-13deg);
+  background-color: #363b41;
+  z-index: 3;
+}
+
+#card-2 {
+  transform: translateY(-55%) rotate(-6deg);
+  background: #404853;
+  z-index: 2;
+}
+
+#card-3 {
+  background: #4b4f55;
+  z-index: 1;
+}
