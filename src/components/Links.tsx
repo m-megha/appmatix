@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import "./Links.css";
 
 const Links = ({
@@ -13,7 +14,9 @@ const Links = ({
       <ul>
         {list.map((item) => (
           <li>
-            <a href={item.path}>{item.label}</a>
+            <HashLink to={item.path} smooth>
+              {item.label}
+            </HashLink>
           </li>
         ))}
       </ul>

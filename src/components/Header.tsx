@@ -6,11 +6,12 @@ import Navbar from "./Navbar";
 import Actions from "./Actions";
 import ScrollDown from "/assets/svg/ScrollDown.svg";
 import ArrowDown from "/assets/icons/ArrowDown.svg";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
     <>
-      <div className="header">
+      <div className="header" id="home">
         <Navbar />
         <Actions />
         <img className="ellipsis" src={Ellipsis} />
@@ -23,13 +24,15 @@ const Header = () => {
             consectetur adipiscing elit, sed.
           </h1>
         </div>
-        <div className="scrollIndicator">
-          <img src={ScrollDown} />
-          <div className="arrows">
-            <img src={ArrowDown} />
-            <img src={ArrowDown} />
+        <HashLink to="#about" smooth>
+          <div className="scrollIndicator">
+            <img src={ScrollDown} />
+            <div className="arrows">
+              <img src={ArrowDown} />
+              <img src={ArrowDown} />
+            </div>
           </div>
-        </div>
+        </HashLink>
       </div>
       <div className="headerExtended" />
     </>

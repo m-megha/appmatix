@@ -34,7 +34,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer>
+    <footer id="contact">
       <div className="info">
         <div className="logoBox infoItem">
           <img src={Logo} height={80} />

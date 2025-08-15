@@ -32,7 +32,7 @@ const About = () => {
   );
 
   return (
-    <div className="about" ref={container}>
+    <div className="about" ref={container} id="about">
       <div className="content">
         <img id="lineGroup1" src={LineGroup} />
         <img id="lineGroup2" src={LineGroup} />

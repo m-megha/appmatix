@@ -39,7 +39,7 @@ const Why = () => {
   );
 
   return (
-    <div className="why" ref={container}>
+    <div className="why" ref={container} id="why">
       <div className="grid">
         <div className="blueDot"></div>
         <div ref={wrapper}>
